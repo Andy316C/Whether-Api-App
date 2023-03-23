@@ -35,7 +35,7 @@ function displayPreviousSearch(id){
 
 function callApi(searchVal,type){
     console.log(type);
-    var api= "http://api.openweathermap.org/geo/1.0/direct?q="+searchVal+"&limit=5&appid=d48c2b18251a8d208785210a66f352a4&units=metric";
+    var api= "https://api.openweathermap.org/geo/1.0/direct?q="+searchVal+"&limit=5&appid=d48c2b18251a8d208785210a66f352a4&units=metric";
     fetch(api)
         .then(function(response){
             return response.json();
